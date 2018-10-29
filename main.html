@@ -2,7 +2,10 @@
 <html>
 <head>
 
-	<link rel="stylesheet" type="text/css" href="navigator.css">
+	<link rel="stylesheet" type="text/css" href="css/navigator.css">
+	<link rel="stylesheet" type="text/css" href="css/loader.css">
+	<link rel="stylesheet" type="text/css" href="css/logoSocial.css">
+
 
 	<style type="text/css">
 		.vija {
@@ -10,7 +13,10 @@
 			width: 100%;
 			background-color: 	#00FFFF;
 			border: 0;
-			margin: 0;
+			margin-top: -0.56%;
+			margin-left: -0.56%;
+			margin-right: -0.56%;
+			margin-bottom: 0.5%;
 			padding: 0;
 		}
 
@@ -18,16 +24,36 @@
 </head>
 <body>
 
-	<hr class ="vija">
+<!-- HTML kodi per loader -->
+	<div id="overlay"> 
+		<div class="spinner"></div> 
+	</div>
+
+	<hr class ="vija">  
+
+	<div id="logoSocial">
+		<div class="socialNetwork" >
+		<a href="http://instagram.com">	<img src="gallery/insta.png"  style="margin :0.5% ;"></a>
+		<a href="http://fb.com">	<img src="gallery/fb.png"  style="margin :0.5% ;"> </a>
+			
+		</div>
+		<div id="logo">
+			<img src="gallery/logo.png" style="margin :0.5% ;">
+		</div>
+	</div>
+
 	<nav>
 		<ul>
-			<li><a href="#" style=" color:white;"> Ballina </a></li>
-			<li><a href="#" style=" color:white;"> Abonimet </a></li>
-			<li><a href="#" style=" color:white;"> Rreth nesh </a></li>
-			<li><a href="#" style=" color:white;">Na Kontaktoni</a></li>
-			<li><a href="#" style=" color:white;">Privatësia dhe politikat</a></li>
+			<li><a href="main.html" style=" color:white;"> BALLINA </a></li>
+			<li><a href="#" style=" color:white;"> ABONIMET </a></li>
+			<li><a href="#" style=" color:white;"> RRETH NESH </a></li>
+			<li><a href="contact.html" style=" color:white;">NA KONTAKTONI</a></li>
+			<li><a href="#" style=" color:white;">PRIVATESIA DHE POLITIKAT</a></li>
 		</ul>
 	</nav>
 
+
+	<p style="display:flex; justify-content: center; align-items: flex-end; margin:3%;">Copyright 2018/19 ©</p>
+<script type="text/javascript" src="js/loader.js"></script>
 </body>
 </html>
