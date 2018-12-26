@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+   <!-- links per mu paraqit ikonat e rrjetev sociale  -->
+  <link rel="stylesheet" href="https://www.google.com">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
+   integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+   crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<style>
+
+
+
+    #aboutBody {
+      display: flex;
+      justify-content: center;
+      font-family: 'Montserrat', sans-serif;
+      color: #F5FFFA;
+    }
+   
+   *{ 
+      /* outline: 1px solid red;  */
+    }  
+    /* e kom shenu per me nejt footer gjith nfund tfaqe (qashtu mka vyt :p) */
+    html{
+      position:relative; 
+      min-height: 100%;
+    }
+
+    #permbajtja
+    {
+     /* width:100% */
+      height: 100%;
+      margin-left: 4%;
+      margin-right: 4%;
+      padding-bottom:2%;
+    } 
+    .footer{
+       
+      position: absolute; 
+      bottom: 0;
+      left: 0%;
+      right: 0%;
+      padding: 10px 0px;
+      text-align: center;
+      background-color:rgba(199, 198, 198, 0.87);
+    }
+    .rrjetetsociale  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    .rrjetetsociale ul  li {
+      float: right;
+      list-style: none;
+      padding-right: 4%;
+    }
+        
+    .rrjetetsociale ul li a {
+      display: block;
+      color: black;
+      width: 20px;
+      height: 20px;
+    }
+    .rrjetetsociale ul li a:hover:not(.active){
+      color:rgba(29, 106, 119, 0.938);
+    }
+        /*  kodi per dizajnin e menus css */
+    .menu  ul {
+            
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color:rgba(29, 106, 119, 0.938);
+    }
+        
+    .menu ul  li {
+      float: left;
+      width: 13.85%;
+    }
+    .menu ul li a {
+      display: block;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      font-size: 17px;
+      padding: 12px;
+      text-decoration: none;
+    }
+    .menu ul li a:hover:not(.active) {
+       color: yellow;
+    }
+    .menu ul .active{
+      background-color:black;
+    }
+    /* mka vyt per madhesi te searchbox  */
+    * {
+     box-sizing: border-box; 
+    }
+    /* css searchbox */
+    .searchbox{
+      max-width:400px; 
+      float:right;
+      padding-top: 2.5%;
+      padding-right: 4%;
+    }
+    form.searchbox input[type=text] {
+      padding: 10px;
+      font-size: 17px;
+      border: 1px solid rgba(29, 106, 119, 0.938);
+      float: left;
+      width: 75%;
+      background: #ffffff;
+    }
+    form.searchbox input[type=submit] {
+      float: left;
+      width: 25%;
+      padding: 10px;
+      background: rgba(29, 106, 119, 0.938);
+      color: white;
+      font-size: 17px;
+      border: 1px solid rgba(29, 106, 119, 0.938);
+      border-right: none;
+      border-left: none;
+      cursor: pointer;
+    }
+    form.searchbox button:hover {
+      background:#656664;
+    }
+
+    form.searchbox::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    /* vija nalt css  */
+    .vija {
+	  height: 3px;
+	  width: 100%;
+	  background-color: rgba(29, 106, 119, 0.938);
+	  border: 0px;
+	  margin-top: 0.5%;
+	  margin-left: 0%;
+	  margin-right: 4%;
+	  margin-bottom: 0.5%;
+	  padding: 0;
+	}
+
+
+ </style>
+       
+    
+ <body style="margin-left:0%;margin-right:0%;" >
+      <div style="background-color: #F5FFFA">
+    <header>
+        <hr class="vija">
+            <form class="searchbox">
+                 <input type="text" placeholder="Search.." name="search">
+                 <input type="submit"name="submit" class="searchbox" value="Search">
+            </form>
+        <!--implementimi i logos(foto.png)dhe rregullimi i madhesise-->
+        <img src="logo1.png" alt="Logoja" style="width:220px;height:90px;margin-left: 4%"> 
+        <!--vazhdimi i kodit per menun-->
+        <div class="menu">
+            <ul>
+                <li class="active"><a href="#home">HOMEPAGE</a></li>
+                <li><a href="#aboutus">ABOUT US</a></li>
+                <li><a href="#onlinetraining">ONLINE TRAINING</a></li> 
+                <li><a href="#sign up">SIGN UP</a></li>
+                <li><a href="#login"> LOGIN</a></li>
+                <li><a href="#team">TEAM</a></li>
+                <!-- <li><a href="#privacy">PRIVACY</a></li> -->
+            </ul>
+        </div>
+      </header>
+
+      <!-- ktu me postu qka ki me dizajnu n'about-->
+<img width="100%" src="aboutus.jpg">
+ <hr>
+      <div id="aboutBody">
+        <hr>
+        <h1 style="color:#055563; background-color: #CEFFCC">ABOUT US</h1>
+        <hr>
+      </div>
+      <hr>
+
+
+      <h3 id="h33" style="font-family: 'Montserrat', sans-serif; background-color: #98ff98; margin-left:10%; margin-right: 10%; color: #1A085C; ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+          <br><hr>
+         Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
+        <br><br>
+         Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </h3>
+
+
+
+
+</div>
+</body>   
+</head>
+</html>
