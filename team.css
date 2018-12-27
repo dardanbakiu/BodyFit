@@ -200,10 +200,10 @@ header{
 #trainers1{
 	padding: 30px;
 	margin: 0 100px;
-
 }
 .team-list li{
 	float: left;
+	margin-right: 6.65%;
 }
 
 .team-list{
