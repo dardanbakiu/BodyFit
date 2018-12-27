@@ -4,13 +4,13 @@
     /* outline: 1px solid red; */
     /*margin: 0;
     padding: 0;
-    user-select: none;  */
+    */
   }
  
   .mbeshtjellesi{ 
     /* position: relative; */
     width: 100%;
-    min-height: 519px;   
+    min-height: 679px;   
     margin-bottom: 0px;
     background: url('32.jpg')   no-repeat fixed center center;   
     top: 0;
@@ -144,11 +144,8 @@
   @media(max-width: 768px){
     
   .container{
-    /* float: none; */
     width: 90%;
-     margin: 420px 35px 35px 35px ;
-      /* padding-top: 360px;  */
-    
+     margin: 320px 35px 310px 15px ;  
   }
   .signup-block input,.login-block input{
     width: 100%
