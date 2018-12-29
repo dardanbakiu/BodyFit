@@ -1,7 +1,7 @@
 .content {
   display: flex;
   justify-content: center;
-  margin-bottom:10%;
+  margin-bottom:15%;
 }
 
 .content .divcontents {
@@ -9,9 +9,18 @@
   background-color: #f1f1f1;
   width: 22%;
   margin: 1%;
+  margin-left: 3.4% ;
+  margin-right:3.4%;
   text-align: center;
   line-height: 75px;
+  font-family: 'Montserrat', sans-serif;
 }
+
+.content .divcontents:hover {
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1.1);
+}
+
 
 .divcontents div p{
 	line-height: 100%;

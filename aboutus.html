@@ -2,12 +2,15 @@
 <html >
 <head>
   <link rel="stylesheet" type="text/css" href="content.css">
+  <script type="text/javascript" src="loader.js"></script>
+  <link rel="stylesheet" type="text/css" href="loader.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://www.google.com">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
      crossorigin="anonymous">
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+       <script src="gameScript.js"></script>
        <style type="text/css">
             #aboutBody {
       display: flex;
@@ -16,9 +19,32 @@
       color: #F5FFFA;
     }
 
+      #aboutBody h4 {
+        margin:auto;
+        color: black;
+        line-height: 100%;
+      
+      }
+      #aboutBody p {
+        margin:auto;
+        color: black;
+        line-height: 100%;
+      }
+       #aboutBody img {
+        margin:auto;
+        margin-left: 0;
+      }
+
     img #imgabout{
       position: fixed;
       padding-top: 10%;
+    }
+
+    #aboutBody {
+      margin-top: 1.32%;
+      margin-left: 10%;
+      margin-right: 10%;
+
     }
    
        </style>
@@ -38,10 +64,10 @@
         <nav>
                 <ul>
                         <div class="permbajtja">
-                        <li class="active"><a href="#home">HOMEPAGE</a></li>
-                        <li><a href="#aboutus">ABOUT US</a></li>
+                        <li class="active"><a href="HOMEPAGE.html">HOMEPAGE</a></li>
+                        <li><a href="aboutus.html">ABOUT US</a></li>
                         <li><a href="#onlinetraining">ONLINE TRAINING</a></li> 
-                        <li><a href="#team">TEAM</a></li>
+                        <li><a href="team.html">TEAM</a></li>
                         <li><a href="SIGN-UP.html" >SIGN UP | LOG IN</a></li>                        
                         </div>
                         
@@ -56,50 +82,35 @@
 <div>
 <img id="imgabout" width="100%" src="aboutus.jpg" >
 </div>
- <hr>
-      <div id="aboutBody" >
-        <hr>
-        <h3 style="padding: 1%; background-color: #DEEBEE; color:#19525F; ">ABOUT US</h3>
-        <hr>
+
+      <div id="aboutBody">
+        <div style="padding-right: 1%;">
+        <h4>Who We Are. What We Do.</h4> <br>
+        <p>Page Fitness is for adults who have neglected their bodies and want to lose 10 to 50+ pounds, live healthier and get jealous compliments form their friends. We have been recognized Internationally as World Fitness Elite game changers and named Fitness Business of the Year for the United States and Canada for providing exceptional client results! Unlike gym memberships and other generic/fad programs that have failed you in the past, our results-based training focuses on your personal wants and needs, in a fun, social and family style atmosphere that you'll call home.</p>
+          <br><br>
+        <h4>We Specialize In Getting People Fit &amp; Healthy</h4>
+        <br>
+        <p>We have the solution to make it happen for you! Our training facility is a place where people come to get fit, lose weight, learn to exercise right, learn to live better, eat healthier, supplement properly and just feel amazing! In fact, all this is part of every program. No fads. No gimmicks. Just real world in-the-trenches science!</p>
+
       </div>
-      <hr>
+        
+        <img src="aboutleft.jpg">
+      </div>
+      
 
-
-      <h5 id="h33" style="font-family: 'Montserrat', sans-serif; padding: 1%; background-color: #DEEBEE; margin-left:10%; margin-right: 10%; color:#19525F; ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
+      <h5 id="h33" style="font-family: 'Montserrat', sans-serif; padding: 1%; background-color: #DEEBEE; margin-left:10%; margin-right: 10%; color:#19525F; ">We're Here to Help You Reach and Exceed Your Goals!
           <br><hr>
-         Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat.
-        <br><br>
-         Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </h5>
+         <p>How do we do that? By providing you with solutions and comprehensive integrated programs. This means customized training, nutrition and meal planning, proper supplementation, and grocery shopping tours. We build these into a plan-of-action that incorporates cardiovascular and resistance training, flexibility/mobility training, and professional coaching all wrapped up in one complete plan specifically designed for you!</p></h5>
 
 </div>
 
 
 <div class="content">
-    <div class="divcontents"><img  src="div1.jpg" width="100%"><div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div></div>
+    <div class="divcontents"><img  src="div1.jpg" width="100%"><div><p>We are NOT a gym. We do not sell gym memberships. We are not the "long slow death by treadmill" or "work mindlessly through a circuit of strength machines" style club. Why? It's a proven fact... that type of exercise works for less than 1% of the population.</p></div></div>
 
-    <div class="divcontents"><img  src="div3.jpg" width="100%"><div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div></div>
+    <div class="divcontents"><img  src="div3.jpg" width="100%"><div><p>More than 80% of our training clients say they've come to us after repeatedly failing to meet their goals at a traditional membership style gym.</p></div></div>
 
-    <div class="divcontents"><img  src="div4.jpg" width="100%"><div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div></div>
+    <div class="divcontents"><img  src="div4.jpg" width="100%"><div><p>We're not here to set you up to fail, we're here to help you succeed! Need to lose 20 pounds? 50 pounds? 100 pounds? Are you trying to get into the Special Forces? Maybe you just want to feel amazing and fit into that little black dress again.</p></div></div>
   </div>
 
 
@@ -126,7 +137,7 @@
             </ul>
         </section>
          <section id="copyright">
-            Copyright©2018,BodyFit,Inc.Online and Face to Face training,Inc. <a href="privacypolicy.html"> Privacy Policy</a><a href="#">Play a game</a>
+            Copyright©2018,BodyFit,Inc.Online and Face to Face training,Inc. <a href="privacypolicy.html"> Privacy Policy</a><a onclick="openWin()"href="#">Play a game</a>
          </section>         
     </footer>
     
