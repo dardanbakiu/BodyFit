@@ -6,15 +6,24 @@
     padding: 0;
     */
   }
+  #myImg{
+    top: 0;
+    width: 100%;
+    min-height: 810px;
+    position: absolute;
+    background-repeat: no-repeat center center;
+    background-size: cover;
+    filter: grayscale(50%);
+    background-attachment: fixed;
+    z-index: -99;
+  }
  
   .mbeshtjellesi{ 
-    /* position: relative; */
-    width: 100%;
+   
+    
     min-height: 679px;   
     margin-bottom: 0px;
-    background: url('32.jpg')   no-repeat fixed center center;   
-    top: 0;
-    background-size: cover;
+
 }
   
 .container{

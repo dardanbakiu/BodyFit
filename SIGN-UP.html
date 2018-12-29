@@ -9,8 +9,7 @@
      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
      crossorigin="anonymous">
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-   
-    
+
 
 </head>
 <body>
@@ -36,7 +35,29 @@
                 </ul>                  
         </nav>
     </header>
+    <img id="myImg" src="32.jpg" alt="">
+    <script>
+   var myElement=document.getElementById('myImg'),
+     myImgs=['32.jpg','34.jpg','786607copy.jpg','bg1.jpg','B2.jpg'];
+     
+    //  console.log(myImgs.length);
+    //  console.log(Math.floor(Math.random()*myImgs.length));
+    // console.log(myRandomNum);
+    // console.log(myImgs[myRandomNum]);
+  
+    function changeImage(myElement,myImgs){
+       'use strict';
+       setInterval(function(){
+      var  myRandomNum=Math.floor(Math.random()*myImgs.length);
+        console.log(myRandomNum);
+         myElement.src= myImgs[myRandomNum];
+       },3000);
+     }
+     changeImage(myElement,myImgs);       
+   </script>
+
 <div class="mbeshtjellesi">     
+       
    <div class="permbajtja">
         <div class="container">                                 
                 <div class="signup">Sign Up</div>
