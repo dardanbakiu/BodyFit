@@ -411,4 +411,42 @@ font-size: 12px;
 }
 
 
+@media(max-width: 768px){
+ 
+.mbeshtjellesi{
+margin-bottom:65%;
+}
+header nav,
+header nav li {
+float:none;
+text-align:center;
+width:100%;
+}
+.searchbox {
+position: relative;    
+padding-right: 8%;     
+}   
+form.searchbox input[type=text],
+form.searchbox input[type=submit] {
+margin-top: 10px;
+padding: 4px;
+}
+header nav li a
+{
+padding: 1%;
+}
 
+
+#footerimes{
+margin-left: 0;
+}
+#copyright{
+height: auto;
+}
+#footerimajtas,
+#footerimes, #footeridjathtas, #copyright,
+#copyright a{
+padding:0 ;
+font-size: 12px;
+}
+}
