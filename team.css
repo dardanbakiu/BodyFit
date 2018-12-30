@@ -317,22 +317,6 @@ header nav li a
 {
 padding: 1%;
 }
-#fotot{
-word-wrap: center;
-padding: 300px 60px 0 60px;
-}
-#fotot #f1{
-margin-bottom: 10px;
-}
-#fotot #f2{
-margin-bottom: 10px;
-}
-#fotot #f3{
-margin-bottom: 10px;
-}
-#fotot #f4{
-margin-bottom: 10px;
-}
 #footerimes{
 margin-left: 0;
 }
@@ -356,9 +340,43 @@ font-size: 12px;
 	background-position: center;
 }
 
-#trainers1{
+
+/*
+#tabela1{
 	padding: 30px;
 	margin: 0 100px;
+}
+table{
+	width:80%; 
+	margin-left:10%;
+	margin-right:10%; 
+}
+table,th,td{
+	border:1px solid rgba(29, 106, 119, 0.938);
+	text-align: center;
+	border-collapse: collapse;
+	font-family: arial;
+	padding: 4px 50px;
+}
+tr:hover{
+	background-color: #d6f0f5;
+}*/
+/*th{
+	background-color: rgba(29, 106, 119, 0.938);
+	color: #fff;
+}*/
+
+/*th{
+	background-color: black;
+	color: #fff
+}*/
+
+
+
+#trainers1{
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
 }
 
 .team-list li{
@@ -371,25 +389,47 @@ font-size: 12px;
 	padding-top: 0;
 	margin:30px;
 }
-
-.trainers:hover{
-	color: rgba(29, 106, 119, 0.938);
+.card{
+	width: 270px;
+	height: 403px;
 }
-
+.para, .mbrapa{
+	width: 270px;
+	height: 403px;
+	/*overflow: hidden;*/
+	backface-visibility: hidden;
+	position: absolute;
+	transition: transform .6s linear;
+}
+.para{
+	transform: perspective(600px) rotateY(0deg);
+}
+.mbrapa{
+	padding: 0;
+	background: url('background-card.jpg');
+	transform: perspective(600px) rotateY(180deg);
+}
 .information{
-	text-align: center;
-	padding-top: 0;
+	color: #3b3b3b;
+	text-align: right;
+	padding: 30px 10px 30px 30px; 
 	font-family: arial;
-	font-size: 16px;
+	font-size: 19px;
 }
+.card:hover > .para{
+	transform: perspective(600px) rotateY(-180deg);
+}
+.card:hover > .mbrapa{
+	transform: perspective(600px) rotateY(0deg);
+}	
 
 .telephone{
 	text-decoration: none;
-	border: 1px solid rgba(29, 106, 119, 0.938);
+	border: 1px solid #009ACD;
 	padding: 8px;
 	margin:5px;
 	background-color: #fff;
-	color: rgba(29, 106, 119, 0.938);
+	color: #009ACD;
 }
 
 .telephone:hover{
@@ -398,10 +438,10 @@ font-size: 12px;
 
 .message{
 	text-decoration: none;
-	border: 1px solid rgba(29, 106, 119, 0.938);
+	border: 1px solid #009ACD;
 	padding:8px;
 	margin: 5px;
-	background-color: rgba(29, 106, 119, 0.938);
+	background-color: #009ACD;
 	color: #fff;
 	font-family: helvetica;
 }
@@ -435,6 +475,11 @@ header nav li a
 {
 padding: 1%;
 }
+
+
+
+
+
 
 
 #footerimes{
