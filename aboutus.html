@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html >
 <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="jqueryStyle.css">
+
   <link rel="stylesheet" type="text/css" href="content.css">
   <script type="text/javascript" src="loader.js"></script>
   <link rel="stylesheet" type="text/css" href="loader.css">
@@ -85,10 +89,10 @@
 
       <div id="aboutBody">
         <div style="padding-right: 1%;">
-        <h4>Who We Are. What We Do.</h4> <br>
+        <h4><abbr title="Title"> <mark>Who</mark> We Are. What We Do.</abbr></h4> <br>
         <p>Page Fitness is for adults who have neglected their bodies and want to lose 10 to 50+ pounds, live healthier and get jealous compliments form their friends. We have been recognized Internationally as World Fitness Elite game changers and named Fitness Business of the Year for the United States and Canada for providing exceptional client results! Unlike gym memberships and other generic/fad programs that have failed you in the past, our results-based training focuses on your personal wants and needs, in a fun, social and family style atmosphere that you'll call home.</p>
           <br><br>
-        <h4>We Specialize In Getting People Fit &amp; Healthy</h4>
+        <h4><abbr  title="Title">We Specialize In Getting People <mark>Fit</mark> &amp; <mark>Healthy</mark> </abbr></h4>
         <br>
         <p>We have the solution to make it happen for you! Our training facility is a place where people come to get fit, lose weight, learn to exercise right, learn to live better, eat healthier, supplement properly and just feel amazing! In fact, all this is part of every program. No fads. No gimmicks. Just real world in-the-trenches science!</p>
 
@@ -98,9 +102,14 @@
       </div>
       
 
-      <h5 id="h33" style="font-family: 'Montserrat', sans-serif; padding: 1%; background-color: #DEEBEE; margin-left:10%; margin-right: 10%; color:#19525F; ">We're Here to Help You Reach and Exceed Your Goals!
-          <br><hr>
-         <p>How do we do that? By providing you with solutions and comprehensive integrated programs. This means customized training, nutrition and meal planning, proper supplementation, and grocery shopping tours. We build these into a plan-of-action that incorporates cardiovascular and resistance training, flexibility/mobility training, and professional coaching all wrapped up in one complete plan specifically designed for you!</p></h5>
+      <h5 id="h33" style="font-family: 'Montserrat', sans-serif; padding: 1%; background-color: #DEEBEE; margin-left:10%; margin-right: 10%; color:#19525F; ">
+          
+       <div id="feeds">
+          <div class="item" id="feed0" style="display: none;">We're Here to Help You Reach and Exceed Your Goals!</div>
+          <div class="item" id="feed1" style="display: none;">How do we do that? By providing you with solutions and comprehensive integrated programs. This means customized training, nutrition and meal planning, proper supplementation, and grocery shopping tours.</div>
+          <div class="item" id="feed2" style="display: none;">We build these into a plan-of-action that incorporates cardiovascular and resistance training, flexibility/mobility training, and professional coaching all wrapped up in one complete plan specifically designed for you!</div>
+          </div>
+    </h5>
 
 </div>
 
@@ -112,6 +121,7 @@
 
     <div class="divcontents"><img  src="div4.jpg" width="100%"><div><p>We're not here to set you up to fail, we're here to help you succeed! Need to lose 20 pounds? 50 pounds? 100 pounds? Are you trying to get into the Special Forces? Maybe you just want to feel amazing and fit into that little black dress again.</p></div></div>
   </div>
+
 
 
     
@@ -142,5 +152,27 @@
     </footer>
     
     
+<script type="text/javascript">
+  var delay = 2000; // shpejtsia e ndrrimit  (animacionit)
+      var count = 5; // sa pjes mi ndrru (sa animacione mi ndrru)
+      var showing = 3; //sa "items" mi qit n'koh
+      var i = 0;
+      function move(i) {
+        return function() {
+          $('#feed'+i).remove().css('display', 'none').prependTo('#feeds');
+        }
+      }
+      function shift() {
+        var toShow = (i + showing) % count;
+        $('#feed'+toShow).slideDown(1000, move(i));
+        $('#feed'+i).slideUp(1000, move(i));
+        i = (i + 1) % count;
+        setTimeout('shift()', delay);
+      }    
+      $(document).ready(function() {
+        setTimeout('shift()', delay);
+      });
+</script>
+
 </body>
 </html>
