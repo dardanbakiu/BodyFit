@@ -241,6 +241,10 @@ float: left;
 #aside1 div{
 min-height: 130px; 
 }
+#aside1 a{
+  text-decoration: none;
+  color: rgba(29, 106, 119, 0.938)
+  }
 .vijashkurt{
 height: 1px;
 background-color:lightgray;
