@@ -335,21 +335,21 @@ font-size: 12px;
 
 
 
-
+.mbeshtjellesi{
+	padding-top: 70px;
+}
 #top-photo{
 	background-position: center;
 }
-
-
 
 #tabela1{
 	padding: 30px;
 	margin: 0 100px;
 }
 table{
-	width:80%; 
-	margin-left:10%;
-	margin-right:10%; 
+	width:90%; 
+	margin-left:5%;
+	margin-right:5%; 
 }
 table,th,td{
 	border:1px solid  #46bdd2;/*rgba(29, 106, 119, 0.938)*/;
@@ -392,6 +392,10 @@ tr:hover{
 	width: 80%;
 	margin-left: 10%;
 	margin-right: 10%;
+}
+
+.team-list{
+
 }
 
 .team-list li{
