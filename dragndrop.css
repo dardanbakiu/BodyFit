@@ -31,7 +31,7 @@
 			  width: 100px;
 			  height: 35px;
 			  padding: 10px;
-			  border: 1px solid grey;
+			
 			}
 				
 		#ddrag2 {
@@ -61,6 +61,10 @@
 			margin-bottom: 0;
 			padding-bottom: 0;
 			padding-right: 0;
+			border-top: 1px solid grey;
+			border-bottom: 0px solid grey;
+			border-right: 0px solid grey;
+			border-left: 1px solid grey;
 		}
 
 		.drop2 {
@@ -71,6 +75,10 @@
 			margin-bottom: 0;
 			padding-left: 0;
 			padding-bottom: 0;
+			border-top: 1px solid grey;
+			border-bottom: 0px solid grey;
+			border-right: 1px solid grey;
+			border-left: 0px solid grey;
 		}
 
 		.drop3 {
@@ -80,6 +88,10 @@
 			margin-right: 0;
 			padding-right: 0;
 			padding-top: 0;
+			border-top: 0px solid grey;
+			border-bottom: 1px solid grey;
+			border-right: 0px solid grey;
+			border-left: 1px solid grey;
 		}
 
 		.drop4 {
@@ -88,4 +100,8 @@
 			margin-left:0;
 			padding-top: 0;
 			padding-left: 0;
+			border-top: 0px solid grey;
+			border-bottom: 1px solid grey;
+			border-right: 1px solid grey;
+			border-left: 0px solid grey;
 		}
