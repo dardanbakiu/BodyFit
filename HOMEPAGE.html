@@ -83,15 +83,15 @@
                             whip across the shins. 
                             The rope won't let you use                        
                             poor form. And that's great 
-                            for injury prevention.</p>
-                            <a class="moreless-button" href="#">Read more ></a>
+                            for injury prevention. </p>
+                            <a class="moreless-button" href="javascript:function f(e){e.preventDefault();}">Read more &raquo;</a>
                             <script>
                                     $('.moreless-button').click(function() {
                                     $('.more').slideToggle();
-                                    if ($('.moreless-button').text() == "Read more >") {
-                                     $(this).text("Read less <")
+                                    if ($('.moreless-button').text() == "Read more \u00bb") {
+                                     $(this).text("Read less \u00ab")
                                      } else {
-                                     $(this).text("Read more >")
+                                     $(this).text("Read more \u00bb")
                                      }
                                      });
                                 </script>      
@@ -132,8 +132,9 @@
                        
                         Perform 3 sets X 10 reps.              
                         </p>                           
-                        <a class="moreless-button2" href="#">Read more </a>
-                            <script>
+                        <!-- <a class="moreless-button2" href="#">Read more > </a> -->
+                        <a class="moreless-button2" href="javascript:function f(e){e.preventDefault();}">Read more &raquo;</a>
+                            <!-- <script>
                                     $('.moreless-button2').click(function() {
                                     $('.more2').slideToggle();
                                     if ($('.moreless-button2').text() == "Read more >") {
@@ -142,7 +143,19 @@
                                      $(this).text("Read more >")
                                      }
                                      });
-                                </script>   
+                                </script>    -->
+                                <script>
+
+                                    $('.moreless-button2').click(function() {
+                                    $('.more2').slideToggle();
+                                    if ($('.moreless-button2').text() == "Read more \u00bb") {
+                                     $(this).text("Read less \u00ab")
+                                     } else {
+                                     $(this).text("Read more \u00bb")
+                                     }
+                                     });
+                                     
+                                </script>    
                 </div>
                  <div id="f3">
                         <img src="3copy.jpg" alt="Rope jumping" style="width:255px; height: 180px;">
@@ -165,14 +178,14 @@
                            when it's late at night 
                            or pouring rain. 
                         </p>
-                        <a class="moreless-button3" href="#">Read more ></a>
+                        <a class="moreless-button3" href="javascript:function f(e){e.preventDefault();}">Read more &raquo;</a>
                         <script>
                                 $('.moreless-button3').click(function() {
                                 $('.more3').slideToggle();
-                                if ($('.moreless-button3').text() == "Read more >") {
-                                 $(this).text("Read less <")
+                                if ($('.moreless-button3').text() == "Read more \u00bb") {
+                                 $(this).text("Read less \u00ab")
                                  } else {
-                                 $(this).text("Read more >")
+                                 $(this).text("Read more \u00bb")
                                  }
                                  });
                             </script>  
@@ -197,14 +210,14 @@
                             of which should be sourced from 
                             water and the remaining from food. 
                         </p>
-                        <a class="moreless-button4" href="#">Read more ></a>
+                        <a class="moreless-button4" href="javascript:function f(e){e.preventDefault();}">Read more &raquo;</a>
                         <script>
                                 $('.moreless-button4').click(function() {
                                 $('.more4').slideToggle();
-                                if ($('.moreless-button4').text() == "Read more >") {
-                                 $(this).text("Read less <")
+                                if ($('.moreless-button4').text() == "Read more \u00bb") {
+                                 $(this).text("Read less \u00ab")
                                  } else {
-                                 $(this).text("Read more >")
+                                 $(this).text("Read more \u00bb")
                                  }
                                  });
                             </script>  
@@ -246,15 +259,15 @@
                 <p id="moreinfo">
                     Refined and updated to offer a setting that is open and light where both staff and clientele are friendly and casual and the focus is on well-balanced health.
                 </p>
-                <a class="morelessinfo-button" href="#">Read more ></a>
+                <a class="morelessinfo-button" href="javascript:function f(e){e.preventDefault();}">Read more &raquo;</a>
                 <script>
                         $('.morelessinfo-button').click(function() {
                         $('#moreinfo').slideToggle();
                         
-                        if ($('.morelessinfo-button').text() == "Read more >") {
-                         $(this).text("Read less <")
+                        if ($('.morelessinfo-button').text() == "Read more \u00bb") {
+                         $(this).text("Read less \u00ab")
                          } else {
-                         $(this).text("Read more >")
+                         $(this).text("Read more \u00bb")
                          }
                          });
                     </script>                 
@@ -267,7 +280,7 @@
                     <p>Bob Harper <br> <br> Fitness Instructor      
                     </p>
                     <br> <br>
-                    <a href="team.html">View Our Team &raquo;</a>
+                    <a href="team.html#trainer1">View Our Team &raquo;</a>
                 </div>
                 <hr class="vijashkurt">
                 <div class="right">
@@ -277,7 +290,7 @@
                     </p>
                     <br>
                     <br>
-                   <a href="team.html">View Our Team &raquo;</a>
+                   <a href="team.html#trainer2">View Our Team &raquo;</a>
                 </div>
                 <hr class="vijashkurt">
                 <div class="right">
@@ -287,7 +300,7 @@
                     </p>
                     <br>   
                     <br>               
-                    <a href="team.html">View Our Team &raquo;</a>
+                    <a href="team.html#trainer3">View Our Team &raquo;</a>
                 </div>
             </aside>        
         </div>
