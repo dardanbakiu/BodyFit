@@ -335,21 +335,21 @@ font-size: 12px;
 
 
 
-
+.mbeshtjellesi{
+	padding-top: 70px;
+}
 #top-photo{
 	background-position: center;
 }
-
-
 
 #tabela1{
 	padding: 30px;
 	margin: 0 100px;
 }
 table{
-	width:80%; 
-	margin-left:10%;
-	margin-right:10%; 
+	width:90%; 
+	margin-left:5%;
+	margin-right:5%; 
 }
 table,th,td{
 	border:1px solid  #46bdd2;/*rgba(29, 106, 119, 0.938)*/;
@@ -360,15 +360,15 @@ table,th,td{
 	padding: 4px 50px;
 }
 
-/*#first-row{
-	background-color: rgba(29, 106, 119, 0.938);
+#first-row{
+	background-color: #C2ECF3;
 	color: #fff;
-}*/
+}
 
-/*#second-row{
-	background-color: #237f90;
+#second-row{
+	background-color: #d6f0f5;
 	color: #fff;
-}*/
+}
 
 /*tr:nth-child(even) {
   background-color: #C8E0F1;
@@ -381,17 +381,19 @@ tr:nth-child(odd) {
 
 
 tr:hover{
-	background-color: #d6f0f5;
+	background-color: #EAF3F5;
 	font-style: bold;
-	color: #2892a4;
+	/*color: #2892a4;*/
 }
-
-
 
 #trainers1{
 	width: 80%;
 	margin-left: 10%;
 	margin-right: 10%;
+}
+
+.team-list{
+
 }
 
 .team-list li{
@@ -413,7 +415,7 @@ tr:hover{
 	height: 403px;
 	/*overflow: hidden;*/
 	backface-visibility: hidden;
-	position: absolute;
+	position:absolute;
 	transition: transform .6s linear;
 }
 .para{
@@ -431,13 +433,13 @@ tr:hover{
 	font-family: arial;
 	font-size: 19px;
 }
+
 .card:hover > .para{
 	transform: perspective(600px) rotateY(-180deg);
 }
 .card:hover > .mbrapa{
 	transform: perspective(600px) rotateY(0deg);
 }	
-
 .telephone{
 	text-decoration: none;
 	border: 1px solid #009ACD;
@@ -446,11 +448,9 @@ tr:hover{
 	background-color: #fff;
 	color: #009ACD;
 }
-
 .telephone:hover{
 	border-radius: 10px;
 }
-
 .message{
 	text-decoration: none;
 	border: 1px solid #009ACD;

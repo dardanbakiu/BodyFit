@@ -7,7 +7,7 @@
       <link rel="stylesheet" type="text/css" href="loader.css">
       <link rel="shortcut icon" href="icon.png"/>
     <link rel="stylesheet" href="signupstyle.css">
-    <link rel="stylesheet" href="https://www.google.com">
+    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
      crossorigin="anonymous">
@@ -64,20 +64,23 @@
    <div class="permbajtja">
         <div class="container">                                 
                 <div class="signup">Sign Up</div>
-                <div class="login">Log In</div>                                 
+                <div class="login">Log In</div> 
+                <form action="" method="post">                            
                 <div class="signup-block">                                        
-                   <input type="text" value="" placeholder="Choose a Username" id="username"/>
-                   <input type="text" value="" placeholder="E-mail" id="email"/>
-                   <input type="password" value="" placeholder="Password" id="password"/>
+                   <input type="text" value="" placeholder="Choose a Username" id="username" required/>
+                   <input type="text" value="" placeholder="E-mail" id="email" required/>
+                   <input type="password" value="" placeholder="Password" id="password" required/>
                    <input type="password" value="" placeholder="Confirm Password" id="confirmpassword"/>
                    <button>Submit</button>                                                 
                 </div>
+           
                 <div class="login-block">                                       
-                   <input type="text" value="" placeholder="Username" id="username"/>
-                   <input type="password" value="" placeholder="Password" id="password"/>
+                   <input type="text" value="" placeholder="Username" id="username" required/>
+                   <input type="password" value="" placeholder="Password" id="password" required/>
                    <button>Log In</button>                                
                    <span><a href="#">I forgot my username or password.</a></span>
-                </div>                                  
+                </div>  
+            </form>                                
         </div>
   </div>       
    <script>
