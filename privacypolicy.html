@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html >
 <head>
+  <link rel="stylesheet" type="text/css" href="dragndrop.css">
+  <script src="dragndrop.js"></script>
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="loader.js"></script>
       <link rel="stylesheet" type="text/css" href="loader.css">
@@ -100,8 +102,44 @@
                 <p>BodyFit has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by BodyFit of the site. Use of any such linked website is at the user's own risk.</p>
         
     </div>
+
+
+    <div style="display:flex; justify-content: center;">
+    <div id="box">
+      <!-- Qetu kena me i qit fotot qe kena mi ba drag and drop -->
+
+      <div id="ddrag1" class="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img src="upright.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="100%" height="100%">
+    </div>
+
+    <div id="ddrag2" class="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img src="upleft.jpg" draggable="true" ondragstart="drag(event)" id="drag2" width="100%" height="100%">
+    </div>
+
+    <div id="ddrag3" class="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img src="downright.jpg" draggable="true" ondragstart="drag(event)" id="drag3" width="100%" height="100%">
+    </div>
+
+    <div id="ddrag4" class="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img src="downleft.jpg" draggable="true" ondragstart="drag(event)" id="drag4" width="100%" height="100%">
+    </div>
+
+  
+      <div class="drop1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+      <div class="drop2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+      <div class="drop3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+      <div class="drop4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+    </div>
+  </div>  
+
     
 </div>
+
+
     <footer>
         <section id="footerimajtas">
                 <h4>Address</h4>
