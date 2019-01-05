@@ -27,6 +27,7 @@ min-height: 70px;
 width: 100%;                            
 position: fixed;
 background: white;
+z-index: 99;
 }
 header img{
 float: left;
