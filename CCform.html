@@ -9,7 +9,39 @@
     <link rel="stylesheet" type="text/css" href="CCform.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     
+    <link rel="stylesheet" type="text/css" href="requirements.css">
 
+	<style type="text/css">
+		@font-face {
+  			font-family: myFirstFont;
+  			src: url(sansation_light.woff);
+		}
+
+		div {
+  		font-family: myFirstFont;
+		}
+	</style>
+	<title>REQUIREMENTS</title>
+	    <script>
+	            function Count() {
+	            if(typeof(Storage)!==undefined)
+	            {
+	                if (sessionStorage.clickcount)
+	                {
+	                sessionStorage.clickcount=Number(sessionStorage.clickcount)+1;
+	                
+	            }
+	            else
+	            {
+	                sessionStorage.clickcount = 1;
+	            }
+	        document.getElementById("result").innerHTML=" You have downloaded this item " + sessionStorage.clickcount + " time(s) within the session!" }
+	            else
+	            {
+	            document.getElementById("result").innerHTML=" We're sorry but your browser doesn't support session storage"
+	            }
+	            }
+        </script>
 
 </head>
 <body>
@@ -68,8 +100,15 @@
                         <img src="visa.jpg" id="visa">
                         <img src="mastercard.jpg" id="mastercard">
                     </div>
-                    <div class="form-group" id="pay-now">
-                        <button type="submit" class="btn btn-default" id="confirm-purchase">Confirm</button>
+                    <div  class="form-group" id="pay-now">
+                        <p><button style="padding-left: 40%; padding-right:40%" id="butoni" onclick="Count()" type="button">  
+                            <svg height="15" width="80">
+                              <text x="0" y="15" fill="#165D34">Submit</text>
+                              Sorry, your browser does not support inline SVG.
+                            </svg>   
+                        </button>
+                    </p>
+                <div id="result"> </div>
                     </div>
             </form>
 
