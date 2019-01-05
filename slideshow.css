@@ -177,3 +177,20 @@
 
     to {opacity:1; }
 }
+
+@media(max-width: 768px){
+    .galleryContainer{
+        width: 80%;
+        height: 200px;
+        
+    }
+    .mbeshtjellesi{
+        padding-top: 90%;
+    }
+    .galleryContainer .slideShowContainer .leftArrow,.galleryContainer .slideShowContainer .rightArrow
+    ,.galleryContainer .slideShowContainer>.captionTextHolder,.galleryContainer .slideShowContainer>.captionTextHolder>.captionText,
+    .galleryContainer #dotsContainer .dots{
+        display: none;
+    }
+
+}

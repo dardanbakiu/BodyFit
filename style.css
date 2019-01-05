@@ -227,12 +227,12 @@ font-size: 14px;
 }
 #copyright a{
 text-decoration: none;
-color: #000000;
+color: white;
 font-size: 14px;
 padding-left: 2%;
 }
 #copyright a:hover{
-color: #ffff;
+color: black;
 }
 
 #aside1{
@@ -327,7 +327,7 @@ padding: 1%;
 }
 #fotot{
 word-wrap: center;
-padding: 300px 60px 0 60px;
+padding: 0px 60px 0 60px;
 }
 #fotot #f1{
 margin-bottom: 10px;
